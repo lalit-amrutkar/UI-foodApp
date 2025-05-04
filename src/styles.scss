@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ffffff, #ecf2f3c3);
+    overflow-y: hidden;
+}
+
+.form-control {
+    border-radius: 0 !important;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+.form-control:focus-visible {
+    box-shadow: none !important;
+}
+
+.form-control:focus:not(.is-invalid):not(.is-valid) {
+    box-shadow: none !important;
+}
+
+.form-control:focus:not(.is-invalid):not(.is-valid):focus-visible {
+    box-shadow: none !important;
+}
+
+.form-control:focus:not(.is-invalid):not(.is-valid):focus-visible:focus {
+    box-shadow: none !important;
+}
+
+.form-control:focus:not(.is-invalid):not(.is-valid):focus-visible:focus-visible {
+    box-shadow: none !important;
+}

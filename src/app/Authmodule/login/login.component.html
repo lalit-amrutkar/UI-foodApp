@@ -1,0 +1,33 @@
+<div class="container mt-5 custom-container">
+    <div class="row justify-content-center custom-row">
+        <div class="col-md-6 custom-col">
+            <h2 class="text-center mb-4 custom-heading">Login</h2>
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="custom-form">
+                <div class="form-group mb-3 custom-form-group">
+                    <label for="email" class="form-label custom-label">Email</label>
+                    <input type="email" id="email" class="form-control custom-input" formControlName="email"
+                        placeholder="Enter your email" />
+                    <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched"
+                        class="text-danger custom-error">
+                        Valid email is required.
+                    </div>
+                </div>
+
+                <div class="form-group mb-3 custom-form-group">
+                    <label for="password" class="form-label custom-label">Password</label>
+                    <input type="password" id="password" class="form-control custom-input" formControlName="password"
+                        placeholder="Enter your password" />
+                    <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched"
+                        class="text-danger custom-error">
+                        Password is required.
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 d-block custom-register-btn"
+                    [disabled]="loginForm.invalid">
+                    Login
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
