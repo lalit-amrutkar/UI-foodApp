@@ -1,0 +1,91 @@
+<div class="master-page">
+    <div class="background-image">
+        <div class="content">
+            <h1>Welcome to FoodApp</h1>
+            <p>Discover the best food & drinks around you</p>
+            <div class="action-buttons">
+                <button type="button" class="btn btn-primary" [routerLink]="['/auth/login']">Sign In</button>
+                <button class="btn btn-primary">Order Now</button>
+                <button class="btn btn-secondary">Explore</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .master-page {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+    }
+
+    .background-image {
+        background-image: url('https://t4.ftcdn.net/jpg/02/92/20/37/360_F_292203735_CSsyqyS6A4Z9Czd4Msf7qZEhoxjpzZl1.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .background-image::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    .content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        color: #fff;
+    }
+
+    .content h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .content p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .action-buttons .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        margin: 0 0.5rem;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .btn-primary {
+        background-color: #ff5722;
+        color: #fff;
+    }
+
+    .btn-primary:hover {
+        background-color: #e64a19;
+    }
+
+    .btn-secondary {
+        background-color: #fff;
+        color: #ff5722;
+    }
+
+    .btn-secondary:hover {
+        background-color: #f5f5f5;
+    }
+</style>
