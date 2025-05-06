@@ -1,37 +1,73 @@
+<app-toast-notification #toastRef></app-toast-notification>
+
 <div class="container mt-5 custom-container">
     <div class="row justify-content-center custom-row">
-        <div class="col-md-6 custom-col">
+        <div class="col-md-8 card shadow-lg custom-col">
             <h2 class="text-center mb-4 custom-heading">Register</h2>
             <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="custom-form">
-                <div class="form-group mb-3 custom-form-group">
-                    <label for="username" class="form-label custom-label">Username</label>
-                    <input type="text" id="username" class="form-control custom-input" formControlName="username"
-                        placeholder="Enter your username" />
-                    <div *ngIf="registerForm.get('username')?.invalid && registerForm.get('username')?.touched"
-                        class="text-danger custom-error">
-                        Username is required.
+                <div class="row">
+                    <div class="col-md-6 form-group mb-3 custom-form-group">
+                        <label for="username" class="form-label custom-label">Username</label>
+                        <input type="text" id="username" class="form-control custom-input" formControlName="username"
+                            placeholder="Enter your username" />
+                        <div *ngIf="registerForm.get('username')?.invalid && registerForm.get('username')?.touched"
+                            class="text-danger custom-error">
+                            Username is required.
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group mb-3 custom-form-group">
+                        <label for="fullname" class="form-label custom-label">Full Name</label>
+                        <input type="text" id="fullname" class="form-control custom-input" formControlName="fullname"
+                            placeholder="Enter your Full Name" />
+                        <div *ngIf="registerForm.get('fullname')?.invalid && registerForm.get('fullname')?.touched"
+                            class="text-danger custom-error">
+                            Please enter your full name.
+                        </div>
                     </div>
                 </div>
 
-                <div class="form-group mb-3 custom-form-group">
-                    <label for="email" class="form-label custom-label">Email</label>
-                    <input type="email" id="email" class="form-control custom-input" formControlName="email"
-                        placeholder="Enter your email" />
-                    <div *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched"
-                        class="text-danger custom-error">
-                        Valid email is required.
+                <div class="row">
+                    <div class="col-md-6 form-group mb-3 custom-form-group">
+                        <label for="email" class="form-label custom-label">Email</label>
+                        <input type="email" id="email" class="form-control custom-input" formControlName="email"
+                            placeholder="Enter your email" />
+                        <div *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched"
+                            class="text-danger custom-error">
+                            Valid email is required.
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group mb-3 custom-form-group">
+                        <label for="password" class="form-label custom-label">Password</label>
+                        <input type="password" id="password" class="form-control custom-input"
+                            formControlName="password" placeholder="Enter your password" />
+                        <div *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched"
+                            class="text-danger custom-error">
+                            Password is required.
+                        </div>
                     </div>
                 </div>
 
-                <div class="form-group mb-3 custom-form-group">
-                    <label for="password" class="form-label custom-label">Password</label>
-                    <input type="password" id="password" class="form-control custom-input" formControlName="password"
-                        placeholder="Enter your password" />
-                    <div *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched"
-                        class="text-danger custom-error">
-                        Password is required.
+                <div class="row">
+                    <div class="col-md-6 form-group mb-3 custom-form-group">
+                        <label for="phone" class="form-label custom-label">Phone</label>
+                        <input type="text" id="phone" class="form-control custom-input" formControlName="phone"
+                            placeholder="Enter your phone number" />
+                        <div *ngIf="registerForm.get('phone')?.invalid && registerForm.get('phone')?.touched"
+                            class="text-danger custom-error">
+                            Phone number is required.
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group mb-3 custom-form-group">
+                        <label for="address" class="form-label custom-label">Address</label>
+                        <input type="text" id="address" class="form-control custom-input" formControlName="address"
+                            placeholder="Enter your address" />
+                        <div *ngIf="registerForm.get('address')?.invalid && registerForm.get('address')?.touched"
+                            class="text-danger custom-error">
+                            Address is required.
+                        </div>
                     </div>
                 </div>
+
 
                 <button type="submit" class="btn btn-primary w-100 d-block custom-register-btn"
                     [disabled]="registerForm.invalid">
