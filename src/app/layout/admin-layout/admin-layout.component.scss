@@ -1,0 +1,31 @@
+.admin-layout {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: sticky;
+    top: 10px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.nav-link {
+    gap: 2rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #07213d;
+    font-weight: 800;
+    border: 1px solid #63c5bb;
+    border-radius: 10px;
+}
+
+.collapse .nav-link {
+    font-size: 1rem;
+}
