@@ -15,7 +15,7 @@ body {
 /* Form card */
 .custom-col {
     background: #ffffff;
-    padding: 0.5rem 4rem;
+    padding: 0.5rem 3rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     width: 100%;
     transition: transform 0.3s ease;
@@ -29,13 +29,15 @@ body {
 .custom-heading {
     font-size: 2rem;
     font-weight: bold;
-    color: #0a6d63;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 1rem;
     text-align: center;
     font-family: 'Segoe UI', sans-serif;
+    text-transform: uppercase;
     letter-spacing: 1px;
 }
-
 
 /* Form group spacing */
 .custom-form-group {
@@ -44,11 +46,12 @@ body {
 
 /* Label styling */
 .custom-label {
-    font-weight: 600;
-    color: #333;
+    font-weight: 800;
+    color: linear-gradient(90deg, #ff7e5f, #feb47b) !important;
     display: block;
     margin-bottom: 0.5rem;
     font-family: system-ui;
+
 }
 
 /* Input styling */
@@ -62,8 +65,9 @@ body {
 }
 
 .custom-input:focus {
+    border-color: #333;
     outline: none;
-    box-shadow: 0 0 0 3px rgba(126, 87, 194, 0.2);
+    box-shadow: 0 0 0 3px rgba(17, 11, 28, 0.2);
 }
 
 /* Error message */
@@ -75,7 +79,7 @@ body {
 
 /* Button styling */
 .custom-register-btn {
-    background-color: #0a6d63;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
     color: #ffffff;
     border: none;
     border-radius: 12px;
@@ -89,11 +93,17 @@ body {
 }
 
 .custom-register-btn:hover:not(:disabled) {
-    background-color: #00695c;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
     transform: scale(1.02);
 }
 
 .custom-register-btn:disabled {
     background-color: #b2dfdb;
     cursor: not-allowed;
+}
+
+/* Ensure input field has equal left and right margins */
+.custom-input {
+    margin-left: auto;
+    margin-right: auto;
 }

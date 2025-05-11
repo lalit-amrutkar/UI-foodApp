@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-restaurant-management',
-  imports: [CommonModule, AdminLayoutComponent],
+  imports: [CommonModule],
   templateUrl: './restaurant-management.component.html',
   styleUrl: './restaurant-management.component.scss'
 })

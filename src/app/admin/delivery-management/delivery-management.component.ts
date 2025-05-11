@@ -4,7 +4,7 @@ import { AdminLayoutComponent } from '../../layout/admin-layout/admin-layout.com
 
 @Component({
   selector: 'app-delivery-management',
-  imports: [CommonModule, AdminLayoutComponent],
+  imports: [CommonModule],
   templateUrl: './delivery-management.component.html',
   styleUrl: './delivery-management.component.scss'
 })

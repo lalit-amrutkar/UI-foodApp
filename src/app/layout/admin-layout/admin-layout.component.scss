@@ -1,31 +1,53 @@
-.admin-layout {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
 .sidebar {
     width: 250px;
     height: 100vh;
     position: sticky;
     top: 10px;
-    margin: 0.5rem;
     padding: 0.5rem;
+    background: #8f9396;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 768px) {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        padding: 1rem;
+        /* Add padding for better spacing */
+    }
+}
+
+header {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    /* Food app category colors */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
 }
 
 .nav-link {
     gap: 2rem;
     color: #333;
     font-weight: 600;
+    display: flex;
+    /* Ensure proper alignment */
+    align-items: center;
+
+    @media (max-width: 768px) {
+        gap: 1rem;
+        font-size: 0.9rem;
+        justify-content: center;
+        /* Center the links */
+    }
 }
 
-.nav-link:hover {
-    color: #07213d;
-    font-weight: 800;
-    border: 1px solid #63c5bb;
-    border-radius: 10px;
-}
-
-.collapse .nav-link {
-    font-size: 1rem;
+.active-link {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }

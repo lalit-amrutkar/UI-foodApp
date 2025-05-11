@@ -18,23 +18,23 @@ export const adminRoutes: Routes = [
                 component: DashboardComponent // Replace with actual component
             },
             {
-                path: 'user-management',
+                path: 'user',
                 component: UserManagementComponent
             },
             {
-                path: 'restaurant-management',
+                path: 'restaurant',
                 component: RestaurantManagementComponent // Replace with actual component
             },
             {
-                path: 'order-management',
+                path: 'order',
                 component: OrderManagementComponent // Replace with actual component
             },
             {
-                path: 'delivery-management',
+                path: 'delivery',
                 component: DeliveryManagementComponent // Replace with actual component
             },
             {
-                path: 'account-management',
+                path: 'account',
                 component: AccountManagementComponent // Replace with actual component
             },
             {

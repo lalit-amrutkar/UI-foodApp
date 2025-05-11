@@ -29,10 +29,13 @@ body {
 .custom-heading {
     font-size: 2rem;
     font-weight: bold;
-    color: #0a6d63;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 1rem;
     text-align: center;
     font-family: 'Segoe UI', sans-serif;
+    text-transform: uppercase;
     letter-spacing: 1px;
 }
 
@@ -43,8 +46,8 @@ body {
 
 /* Label styling */
 .custom-label {
-    font-weight: 600;
-    color: #333;
+    font-weight: 800;
+    color: linear-gradient(90deg, #ff7e5f, #feb47b) !important;
     display: block;
     margin-bottom: 0.5rem;
     font-family: system-ui;
@@ -62,9 +65,9 @@ body {
 }
 
 .custom-input:focus {
-    border-color: #7e57c2;
+    border-color: #333;
     outline: none;
-    box-shadow: 0 0 0 3px rgba(126, 87, 194, 0.2);
+    box-shadow: 0 0 0 3px rgba(17, 11, 28, 0.2);
 }
 
 /* Error message */
@@ -76,7 +79,7 @@ body {
 
 /* Button styling */
 .custom-register-btn {
-    background-color: #0a6d63;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
     color: #ffffff;
     border: none;
     border-radius: 12px;
@@ -90,7 +93,7 @@ body {
 }
 
 .custom-register-btn:hover:not(:disabled) {
-    background-color: #00695c;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
     transform: scale(1.02);
 }
 
