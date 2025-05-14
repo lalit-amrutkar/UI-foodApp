@@ -5,12 +5,12 @@
             <h2 class="text-center mb-4 custom-heading">Login</h2>
             <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="custom-form">
                 <div class="form-group mb-3 custom-form-group">
-                    <label for="email" class="form-label custom-label">Email</label>
-                    <input type="email" id="email" class="form-control custom-input" formControlName="email"
-                        placeholder="Enter your email" />
-                    <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched"
+                    <label for="usernameOrEmail" class="form-label custom-label">Username or Email</label>
+                    <input type="text" id="usernameOrEmail" class="form-control custom-input"
+                        formControlName="usernameOrEmail" placeholder="Enter your username or email" />
+                    <div *ngIf="loginForm.get('usernameOrEmail')?.invalid && loginForm.get('usernameOrEmail')?.touched"
                         class="text-danger custom-error">
-                        Valid email is required.
+                        Username or valid email is required.
                     </div>
                 </div>
 

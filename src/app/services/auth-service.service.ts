@@ -77,4 +77,7 @@ export class AuthService {
     console.error(errorMsg);
     return throwError(() => new Error(errorMsg));
   }
+  setUserDetails(userDetails: any): void {
+    localStorage.setItem('userDetails', JSON.stringify(userDetails));
+  }
 }

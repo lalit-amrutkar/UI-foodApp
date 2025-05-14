@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TableViewComponent } from '../../common/table-view/table-view.component';
 
 @Component({
   selector: 'app-dashboard',
